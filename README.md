@@ -414,6 +414,17 @@ foo ~y:3 ~x:2;;
 - : int = 5
 ```
 
+### Composition operators (`@@` and `|>`)
+
+The syntax
+
+- `f @@ g @@ x` 
+- `x |> g |> f`
+
+are both equivalent to
+
+`f(g(x))` 
+
 ### Function vs fun
 
 Similarly, `function` is to `fun` what `match` is to `let`.
