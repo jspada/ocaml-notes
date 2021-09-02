@@ -28,6 +28,7 @@
   - [Functions](#functions)
     - [Currying](#currying)
     - [Labeled arguments](#labeled-arguments)
+    - [Composition operators (`@@` and `|>`)](#composition-operators--and-)
     - [Function vs fun](#function-vs-fun)
   - [Tuples](#tuples)
     - [Lists](#lists)
@@ -418,12 +419,12 @@ foo ~y:3 ~x:2;;
 
 The syntax
 
-- `f @@ g @@ x` 
+- `f @@ g @@ x`
 - `x |> g |> f`
 
 are both equivalent to
 
-`f(g(x))` 
+`f(g(x))`
 
 ### Function vs fun
 
