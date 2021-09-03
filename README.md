@@ -499,8 +499,10 @@ let distance ((x1 : float), (x2 : float)) ((y1 : float), (y2 : float)) : float =
 
 Lists let you hold any number of items of the same type.  The items are separated by semicolons.
 
+### Initialization
+
 ```ocaml
-let languages = [ "C++"; "C"; "Rust"; "OCaml"]
+let languages = ["C++"; "C"; "Rust"; "OCaml"]
 val languages : string list = ["C++"; "C"; "Rust"; "OCaml"]
 ```
 
@@ -521,6 +523,13 @@ val foo : string list = ["English"]
 - : string list = ["French"; "Spanish"; "English"]
 ```
 
+Or
+
+```ocaml
+(* Create a list of fives nines *)
+let l = List.init 5 ~f:(fun _ -> 9) ;;
+```
+
 Bracket notation is just syntactic sugar
 
 ```ocaml
@@ -533,7 +542,7 @@ Bracket notation is just syntactic sugar
 - : int list = [1; 2; 3]
 ```
 
-Pattern matching
+### Pattern matching
 
 ```ocaml
 let my_fav langs =
@@ -544,7 +553,7 @@ let my_fav langs =
 val my_fav : string list -> string = <fun>
 ```
 
-Recursive list functions
+### Recursive list functions
 
 ```ocaml
 let rec sum l =
