@@ -495,7 +495,7 @@ let distance ((x1 : float), (x2 : float)) ((y1 : float), (y2 : float)) : float =
 ;;
 ```
 
-### Lists
+## Lists
 
 Lists let you hold any number of items of the same type.  The items are separated by semicolons.
 
